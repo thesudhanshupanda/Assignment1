@@ -1,25 +1,27 @@
 
 
-*,*::after, *::before{
+/* *,*::after, *::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 a{
     cursor: pointer, zoom-in;
     text-decoration: none;
+    background-color: var(--primaryC);
 }
 
 .card{
     --radius: .3em;
-    -primaryClr: #00d09c;
+    --primaryC: #00d09c;
     --secondaryClr: #5367ff;
 
 }
 
 body{
-    background-color: rgb(2, 119, 87);
+    /* background-color: rgb(2, 119, 87); */
+    background-Color: #90e0ff;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18.75em, 1fr));
@@ -49,7 +51,109 @@ body{
    
 .card-banner img{
     width: 100%;
+    height: 25vh;
     border-radius: var(--radius);
 }
 
 
+.card-badge{
+    position: absolute;
+    padding: .5em 1em;
+    right: -0.625em;
+    background-color: var(--primaryC);
+   color: white;
+   
+} 
+
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card-footer-links a{
+    color: black;
+    font-weight: 500;
+    padding: .37em;
+    border-radius: var(--radius);
+    font-size: 0.9em;
+    border: none;
+}
+
+.card-footer-buttons button{
+    background-color: transparent;
+    font-size: 1.1em;
+    border: none;
+}
+
+
+/******** Header over media Card *********/
+
+
+.card-header-over .card-header{
+  
+    padding: 0.62em;
+    margin-top: -5em;
+    position: relative;
+    z-index: 2;
+
+}
+
+/******** Header before media Card *********/
+
+.card-header-first .card-header{
+    order: -1;
+}
+
+
+/******** only links *********/
+
+.card-only-links .card-footer{
+    justify-content:center;
+}
+
+.card-only-links .card-footer-buttons{
+    display: none;
+}
+
+.card-only-links .card-footer-links a{
+  
+    text-align: center;;
+  
+}
+
+/********** Horizontal card *************/
+
+.card-hor{
+    flex-flow: row wrap;
+    max-width: 20em;
+    padding: 0.625em;
+}
+
+.card-hor .card-banner{
+    width: 7.8em;
+}
+
+.card-hor .card-header{
+    align-self: center;
+}
+
+
+.card-hor .card-body{
+    display: none;
+}
+
+.card-hor .card-footer{
+    flex-grow: 1;
+}
+
+/********** Only Icons *************/
+
+.card-only-icons .card-footer{
+    justify-content: flex-end;
+}
+
+.card-only-icons .card-footer-links{
+    display: none;
+}
