@@ -1,0 +1,27 @@
+.chips-input-wrapper{
+    border: solid 1px #0f1657 ;
+    width: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+
+.chips-input-wrapper input{
+    outline: none;
+    padding: 10px;
+    border-left: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+    border-right: solid 2px transparent;
+    border-radius: 10px;
+    border-top:solid 2px transparent; 
+    flex-shrink: 1;
+}
