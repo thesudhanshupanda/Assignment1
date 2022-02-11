@@ -4,4 +4,42 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    gap: 25px;
+}
+
+
+.tab-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tab-btn{
+    border-radius: 0;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: solid 3px transparent;
+}
+
+.tab-btn:hover{
+    background-color: hsla(271, 76%, 53%,0.2);
+  }
+
+  .tab-btn:focus{
+    background-color: hsla(271, 76%, 53%,0.4);
+    outline: none ;
+    border-bottom-color: #0f1657 ;
+}
+
+  .tabs-scroll .tabs-btn {
+    
+ 
+    max-width: 100px;
+    overflow-x: auto;
+   
+}
+
+.tabs-scroll::-webkit-scrollbar{
+    display: none;
 }
