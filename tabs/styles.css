@@ -32,10 +32,9 @@ body{
     border-bottom-color: #0f1657 ;
 }
 
-  .tabs-scroll .tabs-btn {
+  .tabs-container .tabs-scroll  {
     
- 
-    max-width: 100%;
+    max-width: 50%;
     overflow-x: scroll;
    
 }
