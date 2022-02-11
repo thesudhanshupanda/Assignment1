@@ -35,8 +35,8 @@ body{
   .tabs-scroll .tabs-btn {
     
  
-    max-width: 100px;
-    overflow-x: auto;
+    max-width: 100%;
+    overflow-x: scroll;
    
 }
 
